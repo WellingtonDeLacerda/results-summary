@@ -1,0 +1,175 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face  {
+    font-family: 'variable';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+@font-face  {
+    font-family: 'medium';
+    src: url('assets/fonts/static/HankenGrotesk-Medium.ttf');
+}
+@font-face  {
+    font-family: 'bold';
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+@font-face  {
+    font-family: 'extra';
+    src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+:root{
+/* ## Colors */
+
+/* ## Primary */
+
+    --Red: hsl(0, 100%, 67%);
+    --Yellow: hsl(39, 100%, 56%);
+    --Green: hsl(166, 100%, 37%);
+    --Blue: hsl(234, 85%, 45%);
+    
+    /* light */
+    --LightRed: hsl(0, 100%, 67%, 10%);
+    --OrangeyYellow: hsl(39, 100%, 56%, 10%);
+    --GreenTeal: hsl(166, 100%, 37%, 10%);
+    --CobaltBlue: hsl(234, 85%, 45%, 10%);
+/* ## Gradients */
+
+    --LightSlateBlue : hsl(252, 100%, 67%);
+/* (background) */ 
+    --LightRoyalBlue : hsl(241, 81%, 54%);
+/* (background) */ 
+
+    --VioletBlue : hsla(256, 72%, 46%, 1);
+/* (circle) */
+    --PersianBlue : hsla(241, 72%, 46%, 0); 
+/* (circle) */
+
+/* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+body{
+    background:var(--PaleBlue) ;
+    font-family: serif;
+}
+main{
+    background: var(--White);
+}
+section#se1{
+    background-image: linear-gradient(to bottom, var(--LightSlateBlue), var(--LightRoyalBlue) );
+    min-width: 300px;
+    max-width: 435px;
+    text-align: center;
+    min-height: 300px;
+    max-height: 400px;
+    padding: 30px;
+    border-radius: 0px 0px 30px 30px;
+}
+section span#result{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: 'bold';
+    color: var(--LightLavender);
+    font-size: 1.2em;
+}
+section div#circle{
+    background-image: linear-gradient(to bottom, var(--VioletBlue), var(--PersianBlue));
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+div#circle #n1{
+    font-size: 3em;
+    font-family: 'extra';
+    color: var(--White);
+}
+div#circle #n2{
+    font-family: 'variable';
+    color: var(--LightLavender);
+    
+}
+section h2{
+    margin: 15px 0px;
+    font-family: 'bold';
+    color: var(--White);
+}
+section p{
+    font-size: 18px;
+    font-family: 'variable';
+    color: var(--LightLavender);
+}
+section#se2{
+    padding: 20px;
+    min-width: 300px;
+    max-width: 435px;
+}
+section span#summary{
+    display: inline-block;
+    font-family: 'bold';
+    font-size: 1.2em;
+}
+div.summary{
+    margin: 25px 0px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "bold";
+}
+#reaction{
+    color:var(--Red) ;
+    background: var(--LightRed);
+}
+#memory{
+    color:var(--Yellow) ;
+    background: var(--OrangeyYellow);
+}
+#verbal{
+    color: var(--Green);
+    background: var(--GreenTeal);
+}
+#visual{
+    color: var(--Blue);
+    background: var(--CobaltBlue);
+}
+.forte{
+    color: var(--DarkGrayBlue);
+}
+.fraco{
+    color: #00000044;
+}
+span.icones{
+    display: flex;
+    align-items: center;
+}
+
+.icones img{
+    margin-right: 10px;
+}
+div#continue{
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: 'bold';
+    background: var(--DarkGrayBlue);
+    color: var(--White);
+    transition: .5s ease ;
+    cursor: pointer;
+}
+div#continue:hover{
+    background: var(--Blue);
+}
